@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const router = require("./routes")
 
-app.use(router)
+app.use("/",router)
 
 const port = process.env.PORT || 8000
 
