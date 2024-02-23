@@ -1,9 +1,9 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
+const router = require("./routes")
 
-app.get('/', function (req, res) {
-  res.send('Hello World dddd ss')
-})
+app.use('/', router)
 
 const port = process.env.PORT || 8000
 
