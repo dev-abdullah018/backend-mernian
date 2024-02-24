@@ -1,8 +1,7 @@
 const express = require('express')
 const route = express.Router()
+const auth = require("./auth");
 
-route.get("/auth", function (req, res) {
-  res.send('Hello World auth')
-})
+route.get("/auth", auth)
 
 module.exports = route;
